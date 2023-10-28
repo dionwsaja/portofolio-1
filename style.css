@@ -1,0 +1,346 @@
+:root {
+  --primary: #022232;
+  --secondary: #ffae19;
+}
+
+body {
+  width: 100%;
+  font-family: "Poppins", sans-serif;
+}
+
+svg {
+  position: absolute;
+  z-index: -999;
+}
+
+nav .container .navbar-brand:hover {
+  transition: all ease 0.15s;
+  color: #ffae19;
+}
+
+/* Normal Phone breakpoints start */
+
+.hero {
+  padding-top: 4rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.title {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  z-index: -99;
+}
+
+.title h1 {
+  font-size: 2.4rem;
+}
+
+.title p {
+  font-size: 1.4rem;
+}
+
+.title p span {
+  color: var(--secondary);
+}
+
+.image-1 img {
+  width: 100%;
+}
+
+.about {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: var(--primary);
+  padding: 1rem;
+  padding-top: 3rem;
+}
+
+.about h1 {
+  color: #fff;
+  margin-bottom: 3rem;
+}
+
+.cards-1 {
+  display: flex;
+  flex-direction: column;
+}
+
+.card-item {
+  padding: 1rem;
+  background-color: #fff;
+  margin-bottom: 0.6rem;
+  border-radius: 0.6rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  transition: all ease 0.05s;
+}
+
+.card-item i {
+  font-size: 2.5rem;
+  margin-bottom: 0.5rem;
+}
+
+.card-item:hover {
+  opacity: 0.9;
+}
+
+.project {
+  display: flex;
+  flex-direction: column;
+  padding: 1rem;
+  align-items: center;
+  padding-top: 3rem;
+}
+
+.project h1 {
+  margin-bottom: 3rem;
+}
+
+.cards-2 {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.card-items-2 {
+  width: 100%;
+  transition: all ease 0.15s;
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  align-items: center;
+  margin-bottom: 1rem;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  border-radius: 8px;
+}
+
+.card-items-2 img {
+  width: 100%;
+  border-top-right-radius: 15px;
+  border-top-left-radius: 15px;
+}
+
+.card-text {
+  background-color: #fff;
+  padding: 9px 16px;
+  border-radius: 15px;
+}
+
+.card-text h2 {
+  font-size: 1.4rem;
+}
+
+.project .cards-2 .card-items-2:hover{
+  opacity: 0.5;
+}
+
+
+footer {
+  padding: 1rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: var(--primary);
+  color: #fff;
+  width: 100%;
+}
+
+footer h1 {
+  margin-bottom: 1rem;
+}
+
+.footer {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+footer form {
+  width: 80%;
+  margin-bottom: 2rem;
+}
+
+footer .button {
+  background-color: var(--secondary);
+  color: #fff;
+}
+
+.footer-list {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+
+.credit {
+  display: flex;
+  flex-direction: column;
+  text-align: right;
+  margin-right: 1rem;
+}
+
+.credit a {
+  text-decoration: none;
+  color: #fff;
+  transition: all ease 0.15s;
+}
+
+.credit a:hover {
+  color: #ffae19;
+}
+
+.footer-list .credit h3,
+.sosmed h3 {
+  font-size: 1rem;
+  font-style: normal;
+  color: var(--secondary);
+}
+
+.sosmed .logo {
+  display: flex;
+  justify-content: space-evenly;
+}
+
+.logo a {
+  color: #fff;
+  transition: all ease 0.15s;
+}
+
+.logo a:hover {
+  color: var(--secondary);
+}
+
+.logo a i {
+  font-size: 1.4rem;
+}
+
+.line {
+  border: 1px solid #fff;
+  width: 70%;
+  margin: 1rem;
+}
+/* Normal Phone breakpoints End */
+
+@media screen and (min-width: 636px) {
+  .hero {
+    padding-top: 5rem;
+  }
+}
+
+@media screen and (min-width: 800px) {
+  .hero {
+    padding-top: 6rem;
+  }
+}
+
+@media screen and (min-width: 992px) {
+  .hero {
+    padding-top: 8rem;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+  }
+
+  .hero .image-1 img {
+    width: 500px;
+  }
+
+  .title {
+    text-align: left;
+  }
+
+  .title h1 {
+    font-size: 3rem;
+  }
+
+  .title p {
+    font-size: 1.5rem;
+  }
+  .cards-2 {
+    display: flex;
+    width: 100%;
+    justify-content: space-evenly;
+    flex-direction: row;
+  }
+
+  .card-items-2 {
+    width: 20%;
+  }
+}
+
+@media screen and (min-width: 1100px) {
+  .cards-1 {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    margin-bottom: 1rem;
+    justify-content: space-evenly;
+  }
+
+  .card-item {
+    width: 30%;
+  }
+}
+
+@media screen and (min-width: 1170px) {
+  .hero {
+    padding-top: 8rem;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+  }
+
+  .hero .image-1 img {
+    width: 600px;
+  }
+
+  .title {
+    text-align: left;
+  }
+
+  .title h1 {
+    font-size: 4rem;
+  }
+
+  .title p {
+    font-size: 2rem;
+  }
+}
+
+@media screen and (min-width: 1260px) {
+  .hero {
+    padding-top: 10rem;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  footer {
+    display: flex;
+    width: 100%;
+    flex-direction: column;
+  }
+
+  .footer {
+    display: flex;
+    flex-direction: row;
+    width: 60%;
+    justify-content: center;
+  }
+
+  .credit {
+    text-align: left;
+  }
+
+  .line {
+    display: none;
+  }
+}
